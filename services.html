@@ -7,7 +7,7 @@
 
     <!-- css -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
 
     <link
       href="font-awesome/css/font-awesome.min.css"
@@ -21,6 +21,20 @@
       rel="stylesheet"
     />
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
+
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
 
     <!-- boxed bg -->
     <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
@@ -94,15 +108,23 @@
       }
 
       .intro-content {
-        /*background: url(../img/dummy/bg1.jpg) no-repeat top center;*/
-        background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+        /* background: url(../img/dummy/bg1.jpg) no-repeat top center; */
+        background: white;
         padding: 200px 0 60px;
       }
     </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      id="mainNav"
+      style="
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      "
+    >
       <div class="container">
         <a
           class="navbar-brand js-scroll-trigger"
@@ -111,6 +133,7 @@
             margin-top: 10px;
             margin-left: -65px;
             font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 60px;
           "
         >
           <h4>
@@ -137,7 +160,7 @@
                 href="index.php"
                 style="font-family: 'IBM Plex Sans', sans-serif"
               >
-                <h6>HOME</h6>
+                <h6 style="font-weight: 900; font-size: 18px">HOME</h6>
               </a>
             </li>
             <li class="nav-item" style="margin-right: 40px">
@@ -146,7 +169,7 @@
                 href="services.html"
                 style="font-family: 'IBM Plex Sans', sans-serif"
               >
-                <h6>ABOUT US</h6>
+                <h6 style="font-weight: 900; font-size: 18px">ABOUT US</h6>
               </a>
             </li>
             <li class="nav-item">
@@ -155,7 +178,7 @@
                 href="contact.html"
                 style="font-family: 'IBM Plex Sans', sans-serif"
               >
-                <h6>CONTACT</h6>
+                <h6 style="font-weight: 900; font-size: 18px">CONTACT</h6>
               </a>
             </li>
           </ul>
@@ -169,7 +192,7 @@
         class="intro"
         style="font-family: 'IBM Plex Sans', sans-serif"
       >
-        <div class="intro-content" style="padding-top: 75px">
+        <div class="intro-content" style="padding-top: 100px">
           <div class="container">
             <div class="row">
               <div class="col-lg-6">
@@ -196,7 +219,7 @@
                     class="h-light"
                     style="
                       font-family: 'IBM Plex Sans', sans-serif;
-                      color: #efe1e1;
+                      color: black;
                     "
                   >
                     Provide best quality healthcare for you
@@ -204,7 +227,7 @@
                 </div>
                 <div
                   class="well well-trans"
-                  style="background: #ffffff00; color: white"
+                  style="background: #ffffff00; color: black"
                 >
                   <div class="wow fadeInRight" data-wow-delay="0.1s">
                     <ul class="lead-list">

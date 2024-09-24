@@ -30,26 +30,40 @@ include("header.php");
 }
 
   </style>
-  <body style="background: -webkit-linear-gradient(left, #3931af, #00c6ff); background-size: cover;">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" >
+  <body style="background: whith; background-size: cover;">
+  <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      id="mainNav"
+      style="
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      "
+    >
     <div class="container">
-
-      <a class="navbar-brand js-scroll-trigger" href="index.php" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;"><h4><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp GLOBAL HOSPITALS</h4></a>
+      <a class="navbar-brand js-scroll-trigger" href="#" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;">
+        <h4><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp GLOBAL HOSPITALS</h4>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item" style="margin-right: 40px;">
-            <a class="nav-link js-scroll-trigger" href="index.php" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>HOME</h6></a>
-          </li>
-  
-          <li class="nav-item" style="margin-right: 40px;">
-            <a class="nav-link js-scroll-trigger" href="services.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>ABOUT US</h6></a>
-          </li>
+            <a class="nav-link js-scroll-trigger" href="index.php" style="font-family: 'IBM Plex Sans', sans-serif;">
+            <h6 style="font-weight: 900; font-size:18px">HOME</h6>
 
+            </a>
+          </li>
+          <li class="nav-item" style="margin-right: 40px;">
+            <a class="nav-link js-scroll-trigger" href="services.html" style="font-family: 'IBM Plex Sans', sans-serif;">
+              <h6 style="font-weight: 900; font-size:18px">ABOUT US</h6>
+            </a>
+          </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="contact.html" style="color: white;font-family: 'IBM Plex Sans', sans-serif;"><h6>CONTACT</h6></a>
+            <a class="nav-link js-scroll-trigger" href="contact.html" style="font-family: 'IBM Plex Sans', sans-serif;">
+              <h6 style="font-weight: 900; font-size:18px">CONTACT</h6>
+            </a>
           </li>
         </ul>
       </div>
@@ -58,11 +72,11 @@ include("header.php");
 
 
 
+
     <div class="container-fluid" style="margin-top:60px;margin-bottom:60px;color:#34495E;">
       <div class="row">
 
-        
-
+      
          <div class="col-md-7" style="padding-left: 180px; ">
                  <div style="-webkit-animation: mover 2s infinite alternate;
     animation: mover 1s infinite alternate;">
@@ -83,14 +97,22 @@ include("header.php");
                 <br>
               <h3 style="margin-top: 10%">Patient Login</h3><br>
               <form class="form-group" method="POST" action="func.php">
-                <div class="row" style="margin-top: 10%">
-                  <div class="col-md-4"><label>Email-ID: </label></div>
-                  <div class="col-md-8"><input type="text" name="email" class="form-control" placeholder="enter email ID" required/></div><br><br>
-                  <div class="col-md-4" style="margin-top: 8%"><label>Password: </label></div>
-                  <div class="col-md-8" style="margin-top: 8%"><input type="password" class="form-control" name="password2" placeholder="enter password" required/></div><br><br><br>
+              <div class="row" style="margin-top: 10%; display: flex; justify-content: center; align-items: center;">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div style="margin-bottom: 20px; display: flex; align-items: center;">
+                        <label style="margin-right: 38px;">Email:  </label>
+                        <input type="text" name="email" class="form-control" placeholder="Enter email" required style="width: 300px;"/>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center;">
+                        <label style="margin-right: 10px;">Password:</label>
+                        <input type="password" class="form-control" name="password2" placeholder="Enter password" required style="width: 300px;"/>
+                    </div>
                 </div>
+            </div>
+
                 <div class="row">
-                 <div class="col-md-4"  style="padding-left: 160px;margin-top: 10%">
+                 <div class="col-md-4"  style="padding-left: 363px;margin-top: 10%">
                     <center><input type="submit" id="inputbtn" name="patsub" value="Login" class="btn btn-primary"></center></div>           
                  <!--  <div class="col-md-8" style="margin-top: 10%">
                     <a href="index.php" class="btn btn-primary">Back</a></div> -->
