@@ -12,18 +12,15 @@
 
 <style >
      .form-control {
-    border-radius: 0.75rem;
-}
-.glassy-effect {
-    background-color: white; /* Solid white background */
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow around the form */
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Light border for subtle effect */
-}
-
-
-
+        border-radius: 0.75rem;
+    }
+    .glassy-effect {
+        background-color: white; /* Solid white background */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow around the form */
+        border: 1px solid rgba(0, 0, 0, 0.1); /* Light border for subtle effect */
+    }
 </style>
 
 <script>
@@ -110,15 +107,15 @@ function checklen()
                     <div class="col-md-9 " style="margin-top: 10px;left: 80px;">
                       
                 
-                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist" style="width: 40%; padding:5px">
+                        <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist" style="width: 40%; padding:5px; background:#03C9D7;">
                             <li class="nav-item">
-                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Patient</a>
+                                <a class="nav-link active" style="color:black; border:1px solid #03C9D7;" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Patient</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Doctor</a>
+                                <a class="nav-link" style="color:black; border:1px solid #03C9D7;" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Doctor</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Admin</a>
+                                <a class="nav-link" style="color:black; border:1px solid #03C9D7;" id="profile-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Admin</a>
                             </li>
                         </ul>
                       
@@ -170,7 +167,7 @@ function checklen()
                                         <input type="submit" name="patsub1" onclick="return checklen();" value="Register" 
                                         style="
                                             padding: 10px 20px;
-                                            background-color: #28a745; /* Green background */
+                                            background-color: #03C9D7; /* Green background */
                                             color: white; /* White text */
                                             border: none; /* No border */
                                             border-radius: 5px; /* Rounded corners */
@@ -203,7 +200,7 @@ function checklen()
                                         <input type="submit" name="docsub1" value="Login"
                                         style="
                                             padding: 10px 20px;
-                                            background-color: #28a745; /* Green background */
+                                            background-color: #03C9D7; /* Green background */
                                             color: white; /* White text */
                                             border: none; /* No border */
                                             border-radius: 5px; /* Rounded corners */
@@ -238,7 +235,7 @@ function checklen()
                                         <input type="submit" name="adsub" value="Login"
                                         style="
                                             padding: 10px 20px;
-                                            background-color: #28a745; /* Green background */
+                                            background-color: #03C9D7; /* Green background */
                                             color: white; /* White text */
                                             border: none; /* No border */
                                             border-radius: 5px; /* Rounded corners */

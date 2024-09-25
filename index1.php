@@ -113,7 +113,17 @@ include("header.php");
 
                 <div class="row">
                  <div class="col-md-4"  style="padding-left: 363px;margin-top: 10%">
-                    <center><input type="submit" id="inputbtn" name="patsub" value="Login" class="btn btn-primary"></center></div>           
+                    <center><input type="submit" id="inputbtn" name="patsub" value="Login" style="
+                              padding: 10px 20px;
+                              background-color: #03C9D7; /* Green background */
+                              color: white; /* White text */
+                              border: none; /* No border */
+                              border-radius: 5px; /* Rounded corners */
+                              font-family: 'IBM Plex Sans', sans-serif; /* Custom font */
+                              font-size: 16px; /* Font size */
+                              cursor: pointer; /* Pointer cursor on hover */
+                              transition: background-color 0.3s ease-in-out; /* Smooth transition */
+                                        "></center></div>           
                  <!--  <div class="col-md-8" style="margin-top: 10%">
                     <a href="index.php" class="btn btn-primary">Back</a></div> -->
                 </div>

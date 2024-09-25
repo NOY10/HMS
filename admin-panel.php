@@ -222,7 +222,7 @@ function get_specs(){
   <body style="padding-top:50px;">
   
    <div class="container-fluid" style="margin-top:50px;">
-    <h3 style = "margin-left: 40%;  padding-bottom: 20px; font-family: 'IBM Plex Sans', sans-serif;"> Welcome &nbsp<?php echo $username ?> 
+    <h3 style = "margin-left: 350px;  padding-bottom: 20px; font-family: 'IBM Plex Sans', sans-serif;"> Welcome &nbsp<?php echo $username ?>, 
    </h3>
     <div class="row">
   <div class="col-md-4" style="max-width:25%; margin-top: 3%">
@@ -239,61 +239,57 @@ function get_specs(){
 
 
       <div class="tab-pane fade  show active" id="list-dash" role="tabpanel" aria-labelledby="list-dash-list">
-        <div class="container-fluid container-fullw bg-white" >
-              <div class="row">
-               <div class="col-sm-4" style="left: 5%">
-                  <div class="panel panel-white no-radius text-center">
-                    <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;"> Book My Appointment</h4>
-                      <script>
-                        function clickDiv(id) {
-                          document.querySelector(id).click();
-                        }
-                      </script>                      
-                      <p class="links cl-effect-1">
-                        <a href="#list-home" onclick="clickDiv('#list-home-list')">
-                          Book Appointment
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-4" style="left: 10%">
-                  <div class="panel panel-white no-radius text-center">
-                    <div class="panel-body" >
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">My Appointments</h2>
-                    
-                      <p class="cl-effect-1">
-                        <a href="#app-hist" onclick="clickDiv('#list-pat-list')">
-                          View Appointment History
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                </div>
-
-                <div class="col-sm-4" style="left: 20%;margin-top:5%">
-                  <div class="panel panel-white no-radius text-center">
-                    <div class="panel-body" >
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;">Prescriptions</h2>
-                    
-                      <p class="cl-effect-1">
-                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
-                          View Prescription List
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-         
+        <div class="" style="display:flex; width:100%; margin-top:4%">
+          <div class="col-sm-4" style="left: 5%">
+            <div class="panel panel-white no-radius text-center">
+                <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
+                <h4 class="StepTitle" style="margin-top: 5%;"> Book My Appointment</h4>
+                <script>
+                  function clickDiv(id) {
+                    document.querySelector(id).click();
+                  }
+                </script>                      
+                <p class="links cl-effect-1">
+                  <a href="#list-home" onclick="clickDiv('#list-home-list')">
+                    Book Appointment
+                  </a>
+                </p>
+              </div>                    <div class="panel-body">
             </div>
           </div>
+
+          <div class="col-sm-4" style="left: 10%">
+            <div class="panel panel-white no-radius text-center">
+              <div class="panel-body" >
+                <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
+                <h4 class="StepTitle" style="margin-top: 5%;">My Appointments</h2>
+              
+                <p class="cl-effect-1">
+                  <a href="#app-hist" onclick="clickDiv('#list-pat-list')">
+                    View Appointment History
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+       
+
+          <div class="col-sm-4" style="left: 20%;">
+            <div class="panel panel-white no-radius text-center">
+              <div class="panel-body" >
+                <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
+                <h4 class="StepTitle" style="margin-top: 5%;">Prescriptions</h2>
+              
+                <p class="cl-effect-1">
+                  <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
+                    View Prescription List
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
 
 
 
