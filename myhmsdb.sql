@@ -10,7 +10,7 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
-SET time_zone = "+00:00";
+SET time_zone = "+06:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -19,8 +19,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `myhmsdb`
+-- Database: `menjongcareunitdb`
 --
+CREATE DATABASE menjongcareunitdb;
+USE menjongcareunitdb;
 
 -- --------------------------------------------------------
 
@@ -31,14 +33,14 @@ SET time_zone = "+00:00";
 CREATE TABLE `admintb` (
   `username` varchar(50) NOT NULL,
   `password` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `admintb`
 --
 
 INSERT INTO `admintb` (`username`, `password`) VALUES
-('admin', 'admin123');
+('admin', 'drukadmin123');
 
 -- --------------------------------------------------------
 
@@ -60,25 +62,25 @@ CREATE TABLE `appointmenttb` (
   `apptime` time NOT NULL,
   `userStatus` int(5) NOT NULL,
   `doctorStatus` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `appointmenttb`
 --
 
 INSERT INTO `appointmenttb` (`pid`, `ID`, `fname`, `lname`, `gender`, `email`, `contact`, `doctor`, `docFees`, `appdate`, `apptime`, `userStatus`, `doctorStatus`) VALUES
-(4, 1, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Ganesh', 550, '2020-02-14', '10:00:00', 1, 0),
-(4, 2, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Dinesh', 700, '2020-02-28', '10:00:00', 0, 1),
-(4, 3, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Amit', 1000, '2020-02-19', '03:00:00', 0, 1),
-(11, 4, 'Shraddha', 'Kapoor', 'Female', 'shraddha@gmail.com', '9768946252', 'ashok', 500, '2020-02-29', '20:00:00', 1, 1),
-(4, 5, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Dinesh', 700, '2020-02-28', '12:00:00', 1, 1),
-(4, 6, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Ganesh', 550, '2020-02-26', '15:00:00', 0, 1),
-(2, 8, 'Alia', 'Bhatt', 'Female', 'alia@gmail.com', '8976897689', 'Ganesh', 550, '2020-03-21', '10:00:00', 1, 1),
-(5, 9, 'Gautam', 'Shankararam', 'Male', 'gautam@gmail.com', '9070897653', 'Ganesh', 550, '2020-03-19', '20:00:00', 1, 0),
-(4, 10, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Ganesh', 550, '0000-00-00', '14:00:00', 1, 0),
-(4, 11, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'Dinesh', 700, '2020-03-27', '15:00:00', 1, 1),
-(9, 12, 'William', 'Blake', 'Male', 'william@gmail.com', '8683619153', 'Kumar', 800, '2020-03-26', '12:00:00', 1, 1),
-(9, 13, 'William', 'Blake', 'Male', 'william@gmail.com', '8683619153', 'Tiwary', 450, '2020-03-26', '14:00:00', 1, 1);
+(4, 1, 'Tshering', 'Dorji', 'Male', 'tshering@drukmail.bt', '17123456', 'Pema', 550, '2020-02-14', '10:00:00', 1, 0),
+(4, 2, 'Tshering', 'Dorji', 'Male', 'tshering@drukmail.bt', '17123456', 'Karma', 700, '2020-02-28', '10:00:00', 0, 1),
+(4, 3, 'Tshering', 'Dorji', 'Male', 'tshering@drukmail.bt', '17123456', 'Dorji', 1000, '2020-02-19', '03:00:00', 0, 1),
+(11, 4, 'Deki', 'Wangmo', 'Female', 'deki@drukmail.bt', '17234567', 'Rinzin', 500, '2020-02-29', '20:00:00', 1, 1),
+(4, 5, 'Tshering', 'Dorji', 'Male', 'tshering@drukmail.bt', '17123456', 'Karma', 700, '2020-02-28', '12:00:00', 1, 1),
+(4, 6, 'Tshering', 'Dorji', 'Male', 'tshering@drukmail.bt', '17123456', 'Pema', 550, '2020-02-26', '15:00:00', 0, 1),
+(2, 8, 'Sonam', 'Zam', 'Female', 'sonam@drukmail.bt', '17345678', 'Pema', 550, '2020-03-21', '10:00:00', 1, 1),
+(5, 9, 'Jigme', 'Thinley', 'Male', 'jigme@drukmail.bt', '17456789', 'Pema', 550, '2020-03-19', '20:00:00', 1, 0),
+(4, 10, 'Tshering', 'Dorji', 'Male', 'tshering@drukmail.bt', '17123456', 'Pema', 550, '0000-00-00', '14:00:00', 1, 0),
+(4, 11, 'Tshering', 'Dorji', 'Male', 'tshering@drukmail.bt', '17123456', 'Karma', 700, '2020-03-27', '15:00:00', 1, 1),
+(9, 12, 'Kinley', 'Wangchuk', 'Male', 'kinley@drukmail.bt', '17567890', 'Chimi', 800, '2020-03-26', '12:00:00', 1, 1),
+(9, 13, 'Kinley', 'Wangchuk', 'Male', 'kinley@drukmail.bt', '17567890', 'Yangki', 450, '2020-03-26', '14:00:00', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -91,22 +93,22 @@ CREATE TABLE `contact` (
   `email` text NOT NULL,
   `contact` varchar(10) NOT NULL,
   `message` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `contact`
 --
 
 INSERT INTO `contact` (`name`, `email`, `contact`, `message`) VALUES
-('Anu', 'anu@gmail.com', '7896677554', 'Hey Admin'),
-(' Viki', 'viki@gmail.com', '9899778865', 'Good Job, Pal'),
-('Ananya', 'ananya@gmail.com', '9997888879', 'How can I reach you?'),
-('Aakash', 'aakash@gmail.com', '8788979967', 'Love your site'),
-('Mani', 'mani@gmail.com', '8977768978', 'Want some coffee?'),
-('Karthick', 'karthi@gmail.com', '9898989898', 'Good service'),
-('Abbis', 'abbis@gmail.com', '8979776868', 'Love your service'),
-('Asiq', 'asiq@gmail.com', '9087897564', 'Love your service. Thank you!'),
-('Jane', 'jane@gmail.com', '7869869757', 'I love your service!');
+('Sangay', 'sangay@drukmail.bt', '17678901', 'Hello Admin'),
+('Tashi', 'tashi@drukmail.bt', '17789012', 'Good Job, Kuzuzangpo'),
+('Pema', 'pema@drukmail.bt', '17890123', 'How can I reach you?'),
+('Namgay', 'namgay@drukmail.bt', '17901234', 'Love your site'),
+('Dorji', 'dorji@drukmail.bt', '17012345', 'Want some suja?'),
+('Karma', 'karma@drukmail.bt', '17123456', 'Good service'),
+('Choden', 'choden@drukmail.bt', '17234567', 'Love your service'),
+('Ugyen', 'ugyen@drukmail.bt', '17345678', 'Love your service. Tashi Delek!'),
+('Zangmo', 'zangmo@drukmail.bt', '17456789', 'I love your service!');
 
 -- --------------------------------------------------------
 
@@ -120,21 +122,21 @@ CREATE TABLE `doctb` (
   `email` varchar(50) NOT NULL,
   `spec` varchar(50) NOT NULL,
   `docFees` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `doctb`
 --
 
 INSERT INTO `doctb` (`username`, `password`, `email`, `spec`, `docFees`) VALUES
-('ashok', 'ashok123', 'ashok@gmail.com', 'General', 500),
-('arun', 'arun123', 'arun@gmail.com', 'Cardiologist', 600),
-('Dinesh', 'dinesh123', 'dinesh@gmail.com', 'General', 700),
-('Ganesh', 'ganesh123', 'ganesh@gmail.com', 'Pediatrician', 550),
-('Kumar', 'kumar123', 'kumar@gmail.com', 'Pediatrician', 800),
-('Amit', 'amit123', 'amit@gmail.com', 'Cardiologist', 1000),
-('Abbis', 'abbis123', 'abbis@gmail.com', 'Neurologist', 1500),
-('Tiwary', 'tiwary123', 'tiwary@gmail.com', 'Pediatrician', 450);
+('Rinzin', 'rinzin123', 'rinzin@drukmail.bt', 'General', 500),
+('Tenzin', 'tenzin123', 'tenzin@drukmail.bt', 'Cardiologist', 600),
+('Karma', 'karma123', 'karma@drukmail.bt', 'General', 700),
+('Pema', 'pema123', 'pema@drukmail.bt', 'Pediatrician', 550),
+('Chimi', 'chimi123', 'chimi@drukmail.bt', 'Pediatrician', 800),
+('Dorji', 'dorji123', 'dorji@drukmail.bt', 'Cardiologist', 1000),
+('Wangchuk', 'wangchuk123', 'wangchuk@drukmail.bt', 'Neurologist', 1500),
+('Yangki', 'yangki123', 'yangki@drukmail.bt', 'Pediatrician', 450);
 
 -- --------------------------------------------------------
 
@@ -151,24 +153,24 @@ CREATE TABLE `patreg` (
   `contact` varchar(10) NOT NULL,
   `password` varchar(30) NOT NULL,
   `cpassword` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `patreg`
 --
 
 INSERT INTO `patreg` (`pid`, `fname`, `lname`, `gender`, `email`, `contact`, `password`, `cpassword`) VALUES
-(1, 'Ram', 'Kumar', 'Male', 'ram@gmail.com', '9876543210', 'ram123', 'ram123'),
-(2, 'Alia', 'Bhatt', 'Female', 'alia@gmail.com', '8976897689', 'alia123', 'alia123'),
-(3, 'Shahrukh', 'khan', 'Male', 'shahrukh@gmail.com', '8976898463', 'shahrukh123', 'shahrukh123'),
-(4, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'kishan123', 'kishan123'),
-(5, 'Gautam', 'Shankararam', 'Male', 'gautam@gmail.com', '9070897653', 'gautam123', 'gautam123'),
-(6, 'Sushant', 'Singh', 'Male', 'sushant@gmail.com', '9059986865', 'sushant123', 'sushant123'),
-(7, 'Nancy', 'Deborah', 'Female', 'nancy@gmail.com', '9128972454', 'nancy123', 'nancy123'),
-(8, 'Kenny', 'Sebastian', 'Male', 'kenny@gmail.com', '9809879868', 'kenny123', 'kenny123'),
-(9, 'William', 'Blake', 'Male', 'william@gmail.com', '8683619153', 'william123', 'william123'),
-(10, 'Peter', 'Norvig', 'Male', 'peter@gmail.com', '9609362815', 'peter123', 'peter123'),
-(11, 'Shraddha', 'Kapoor', 'Female', 'shraddha@gmail.com', '9768946252', 'shraddha123', 'shraddha123');
+(1, 'Tashi', 'Wangdi', 'Male', 'tashi@drukmail.bt', '17567890', 'tashi123', 'tashi123'),
+(2, 'Sonam', 'Zam', 'Female', 'sonam@drukmail.bt', '17678901', 'sonam123', 'sonam123'),
+(3, 'Jigme', 'Dorji', 'Male', 'jigme@drukmail.bt', '17789012', 'jigme123', 'jigme123'),
+(4, 'Tshering', 'Dorji', 'Male', 'tshering@drukmail.bt', '17123456', 'tshering123', 'tshering123'),
+(5, 'Jigme', 'Thinley', 'Male', 'jigmet@drukmail.bt', '17456789', 'jigmet123', 'jigmet123'),
+(6, 'Pema', 'Lhamo', 'Female', 'pemal@drukmail.bt', '17890123', 'pema123', 'pema123'),
+(7, 'Dechen', 'Wangmo', 'Female', 'dechen@drukmail.bt', '17901234', 'dechen123', 'dechen123'),
+(8, 'Karma', 'Tenzin', 'Male', 'karmat@drukmail.bt', '17012345', 'karma123', 'karma123'),
+(9, 'Kinley', 'Wangchuk', 'Male', 'kinley@drukmail.bt', '17567890', 'kinley123', 'kinley123'),
+(10, 'Namgay', 'Dorji', 'Male', 'namgay@drukmail.bt', '17234567', 'namgay123', 'namgay123'),
+(11, 'Deki', 'Wangmo', 'Female', 'deki@drukmail.bt', '17234567', 'deki123', 'deki123');
 
 -- --------------------------------------------------------
 
@@ -187,17 +189,17 @@ CREATE TABLE `prestb` (
   `disease` varchar(250) NOT NULL,
   `allergy` varchar(250) NOT NULL,
   `prescription` varchar(1000) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `prestb`
 --
 
 INSERT INTO `prestb` (`doctor`, `pid`, `ID`, `fname`, `lname`, `appdate`, `apptime`, `disease`, `allergy`, `prescription`) VALUES
-('Dinesh', 4, 11, 'Kishan', 'Lal', '2020-03-27', '15:00:00', 'Cough', 'Nothing', 'Just take a teaspoon of Benadryl every night'),
-('Ganesh', 2, 8, 'Alia', 'Bhatt', '2020-03-21', '10:00:00', 'Severe Fever', 'Nothing', 'Take bed rest'),
-('Kumar', 9, 12, 'William', 'Blake', '2020-03-26', '12:00:00', 'Sever fever', 'nothing', 'Paracetamol -> 1 every morning and night'),
-('Tiwary', 9, 13, 'William', 'Blake', '2020-03-26', '14:00:00', 'Cough', 'Skin dryness', 'Intake fruits with more water content');
+('Karma', 4, 11, 'Tshering', 'Dorji', '2020-03-27', '15:00:00', 'Cough', 'None', 'Take one teaspoon of Bhutanese herbal syrup every night'),
+('Pema', 2, 8, 'Sonam', 'Zam', '2020-03-21', '10:00:00', 'High Fever', 'None', 'Rest and drink plenty of water'),
+('Chimi', 9, 12, 'Kinley', 'Wangchuk', '2020-03-26', '12:00:00', 'Severe fever', 'none', 'Paracetamol -> 1 every morning and night'),
+('Yangki', 9, 13, 'Kinley', 'Wangchuk', '2020-03-26', '14:00:00', 'Cough', 'Skin dryness', 'Drink ginger tea and rest');
 
 --
 -- Indexes for dumped tables
