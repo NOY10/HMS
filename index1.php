@@ -41,8 +41,8 @@ include("header.php");
       "
     >
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;">
-        <h4><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp GLOBAL HOSPITALS</h4>
+      <a draggable="false" class="navbar-brand js-scroll-trigger" href="/HMS" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;">
+                        <img draggable="false" class="logo-img" src="img/logo.png" alt="Logo Image" width="100px" height="50px"/>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -68,7 +68,7 @@ include("header.php");
         </ul>
       </div>
     </div>
-  </nav>
+</nav>
 
 
 
