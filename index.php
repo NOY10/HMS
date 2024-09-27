@@ -55,7 +55,7 @@ function checklen()
 
 <!------ Include the above in your HEAD tag ---------->
 <body>
-<nav
+    <nav
       class="navbar navbar-expand-lg navbar-light fixed-top"
       id="mainNav"
       style="
@@ -66,7 +66,7 @@ function checklen()
     >
     <div class="container">
       <a draggable="false" class="navbar-brand js-scroll-trigger" href="/HMS" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;">
-            <img draggable="false" class="logo-img" src="img/logo.png" alt="Logo Image" width="100px" height="50px"/>
+        <img draggable="false" class="logo-img" src="img/logo.png" alt="Logo Image" style="width:150px; height:50px" width="100px" height="50px"/>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -92,7 +92,7 @@ function checklen()
         </ul>
       </div>
     </div>
-</nav>
+  </nav>
 
 	
 
@@ -103,22 +103,22 @@ function checklen()
             <img src="img/hero.jpg" alt="Hero Image" style="width:500px; height:500px;" />
 
             </div>
-            <div class="col-md-9 " style="margin-top: 10px;left: 80px;">
-                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist" style="width: 40%; padding:5px; background:#03C9D7;">
+            <div class="col-md-9 " style="margin-top: 10px;left: 100px;">
+                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist" style="width: 40%; padding:5px; background:#03C9D7; margin-right:15px">
                     <li class="nav-item">
-                        <a class="nav-link active" style="color:black; border:1px solid #03C9D7;" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Patient</a>
+                        <a class="nav-link active" style="color:black; border:1px solid #03C9D7; padding-top:4px" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Patient</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color:black; border:1px solid #03C9D7;" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Doctor</a>
+                        <a class="nav-link" style="color:black; border:1px solid #03C9D7; padding-top:4px" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Doctor</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color:black; border:1px solid #03C9D7;" id="profile-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Admin</a>
+                        <a class="nav-link" style="color:black; border:1px solid #03C9D7; padding-top:4px" id="profile-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Admin</a>
                     </li>
                 </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <form method="post" action="func2.php">
-                    <h3 class="register-heading" style="margin-top:36px">Register as Patient</h3>
+                    <h3 class="register-heading" style="margin-top:30px">Register as Patient</h3>
                     <div class="row register-form glassy-effect" style="width: 100%;">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -142,7 +142,7 @@ function checklen()
                                         <span>Female </span> 
                                     </label>
                                 </div>
-                                    <a href="index1.php">Already have an account?</a>
+                                    <a href="index1.php" style="color:#03C9D7">Already have an account?</a>
                                 </div>
                             </div>
                                 
@@ -178,7 +178,7 @@ function checklen()
                             
                             <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                 <form method="post" action="func1.php">
-                                <h3 class="register-heading" style="margin-top:36px">Login as Doctor</h3>
+                                <h3 class="register-heading" style="margin-top:30px">Login as Doctor</h3>
                                 <div class="row register-form glassy-effect" style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -210,7 +210,7 @@ function checklen()
 
                             <div class="tab-pane fade show" id="admin" role="tabpanel" aria-labelledby="profile-tab">
                                 <form method="post" action="func3.php">
-                                <h3 class="register-heading" style="margin-top:36px">Login as Admin</h3>
+                                <h3 class="register-heading" style="margin-top:30px">Login as Admin</h3>
                                 <div class="row register-form glassy-effect" style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
                                     <div class="col-md-6">
                                         <div class="form-group">

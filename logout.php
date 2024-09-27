@@ -14,15 +14,15 @@ session_destroy();
 
     <style >
       .btn-outline-light:hover {
-        color: #0076d4;
+        color:white;
         background-color: #f8f9fa;
-        border-color: #f8f9fa;
+        border-color: black;
 }
     </style>
   </head>
-  <body style="background: -webkit-linear-gradient(left, #3931af, #00c6ff);color:white;padding-top:100px;text-align:center;">
+  <body style="background: -webkit-linear-gradient(left, #03C9D7, #00c6ff);color:black;padding-top:100px;text-align:center;">
     <h3>You have logged out.</h3><br><br>
-    <a href="index1.php" class="btn btn-outline-light">Back to Login Page</a>
+    <a href="index1.php" class="btn btn-outline-light" style="color:black; border-color:black">Back to Login Page</a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

@@ -39,6 +39,7 @@ if(isset($_GET['cancel']))
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <title>MenjongCareUnit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
@@ -50,48 +51,65 @@ if(isset($_GET['cancel']))
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Global Hospital </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+
 
     <style >
+      .btn-outline-light{
+        background-color: #03C9D7;
+      }
       .btn-outline-light:hover{
-        color: #25bef7;
-        background-color: #f8f9fa;
-        border-color: #f8f9fa;
+        color: black;
+        background-color: -webkit-linear-gradient(left, #3931af, #00c6ff);
+        border-color: #03C9D7;
+      }
+
+      .bg-primary {
+        background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+      }
+      .list-group-item.active {
+        z-index: 2;
+        color: #fff;
+        background-color: #03C9D7;
+        border-color:#03C9D7;
+      }
+      .text-primary {
+        color: #342ac1!important;
       }
     </style>
 
-  <style >
-    .bg-primary {
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
-}
-.list-group-item.active {
-    z-index: 2;
-    color: #fff;
-    background-color: #342ac1;
-    border-color: #007bff;
-}
-.text-primary {
-    color: #342ac1!important;
-}
-  </style>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-     <ul class="navbar-nav mr-auto">
-       <li class="nav-item">
-        <a class="nav-link" href="logout1.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#"></a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0" method="post" action="search.php">
-      <input class="form-control mr-sm-2" type="text" placeholder="Enter contact number" aria-label="Search" name="contact">
-      <input type="submit" class="btn btn-outline-light" id="inputbtn" name="search_submit" value="Search">
-    </form>
+  <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      id="mainNav"
+      style="
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <img
+            draggable="false"
+            class="logo-img"
+            src="img/logo.png"
+            alt="Logo Image"
+            style="width: 150px; height: 50px"
+          />
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0" method="post" action="search.php">
+          <input class="form-control mr-sm-2" type="text" placeholder="Enter contact number" aria-label="Search" name="contact">
+          <input type="submit" class="btn btn-outline-light" id="inputbtn" name="search_submit" value="Search">
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+           <a class="nav-link" href="logout1.php" style="color:black"><i class="fa fa-sign-out" aria-hidden="true" style="color:black"></i>Logout</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#"></a>
+          </li>
+        </ul>
+  
   </div>
 </nav>
   </head>
@@ -121,15 +139,15 @@ if(isset($_GET['cancel']))
                <div class="col-sm-4" style="left: 10%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list fa-stack-1x fa-inverse"></i> </span>
-                      <h4 class="StepTitle" style="margin-top: 5%;"> View Appointments</h4>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x" style="color:#03C9D7"></i> <i class="fa fa-list fa-stack-1x fa-inverse"></i> </span>
+                      <h4 class="StepTitle" style="margin-top: 5%;" > View Appointments</h4>
                       <script>
                         function clickDiv(id) {
                           document.querySelector(id).click();
                         }
                       </script>                      
                       <p class="links cl-effect-1">
-                        <a href="#list-app" onclick="clickDiv('#list-app-list')">
+                        <a href="#list-app" onclick="clickDiv('#list-app-list')" style="color:#03C9D7">
                           Appointment List
                         </a>
                       </p>
@@ -140,11 +158,11 @@ if(isset($_GET['cancel']))
                 <div class="col-sm-4" style="left: 15%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x" style="color:#03C9D7"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
                       <h4 class="StepTitle" style="margin-top: 5%;"> Prescriptions</h4>
                         
                       <p class="links cl-effect-1">
-                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
+                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')" style="color:#03C9D7">
                           Prescription List
                         </a>
                       </p>

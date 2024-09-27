@@ -42,6 +42,7 @@ if(isset($_POST['docsub1']))
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <title>MenjongCareUnit</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
@@ -50,30 +51,25 @@ if(isset($_POST['docsub1']))
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Global Hospital </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+    
+    
   <script >
     var check = function() {
-  if (document.getElementById('dpassword').value ==
-    document.getElementById('cdpassword').value) {
-    document.getElementById('message').style.color = '#5dd05d';
-    document.getElementById('message').innerHTML = 'Matched';
-  } else {
-    document.getElementById('message').style.color = '#f55252';
-    document.getElementById('message').innerHTML = 'Not Matching';
-  }
-}
+      if (document.getElementById('dpassword').value ==
+        document.getElementById('cdpassword').value) {
+        document.getElementById('message').style.color = '#5dd05d';
+        document.getElementById('message').innerHTML = 'Matched';
+      } else {
+        document.getElementById('message').style.color = '#f55252';
+        document.getElementById('message').innerHTML = 'Not Matching';
+      }
+    }
 
     function alphaOnly(event) {
-  var key = event.keyCode;
-  return ((key >= 65 && key <= 90) || key == 8 || key == 32);
-};
+      var key = event.keyCode;
+      return ((key >= 65 && key <= 90) || key == 8 || key == 32);
+    };
   </script>
 
   <style >
@@ -88,8 +84,8 @@ if(isset($_POST['docsub1']))
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #342ac1;
-    border-color: #007bff;
+    background-color:#03C9D7;
+    border-color: #03C9D7;
 }
 .text-primary {
     color: #342ac1!important;
@@ -104,15 +100,35 @@ if(isset($_POST['docsub1']))
 }
 
 .btn-primary{
-  background-color: #3c50c1;
-  border-color: #3c50c1;
+  background-color:#03C9D7;
+  border-color: #03C9D7;
 }
   </style>
 
+<nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      id="mainNav"
+      style="
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <img
+            draggable="false"
+            class="logo-img"
+            src="img/logo.png"
+            alt="Logo Image"
+            style="width: 150px; height: 50px"
+          />
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-     <ul class="navbar-nav mr-auto">
+     <ul class="navbar-nav ml-auto">
        <li class="nav-item">
-        <a class="nav-link" href="logout1.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+        <a class="nav-link" href="logout1.php" style="color:black"><i class="fa fa-sign-out" aria-hidden="true" style="color:black"></i>Logout</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="#"></a>
@@ -127,7 +143,7 @@ if(isset($_POST['docsub1']))
   </style>
   <body style="padding-top:50px;">
    <div class="container-fluid" style="margin-top:50px;">
-    <h3 style = "margin-left: 40%; padding-bottom: 20px;font-family: 'IBM Plex Sans', sans-serif;"> WELCOME RECEPTIONIST </h3>
+    <h3 style = "margin-left: 40%; padding-bottom: 20px;font-family: 'IBM Plex Sans', sans-serif;"> WELCOME ADMIN </h3>
     <div class="row">
   <div class="col-md-4" style="max-width:25%;margin-top: 3%;">
     <div class="list-group" id="list-tab" role="tablist">
@@ -153,7 +169,7 @@ if(isset($_POST['docsub1']))
                <div class="col-sm-4">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body">
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x" style="color:#03C9D7"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
                       <h4 class="StepTitle" style="margin-top: 5%;">Doctor List</h4>
                       <script>
                         function clickDiv(id) {
@@ -161,7 +177,7 @@ if(isset($_POST['docsub1']))
                         }
                       </script> 
                       <p class="links cl-effect-1">
-                        <a href="#list-doc" onclick="clickDiv('#list-doc-list')">
+                        <a href="#list-doc" onclick="clickDiv('#list-doc-list')" style="color:#03C9D7">
                           View Doctors
                         </a>
                       </p>
@@ -172,11 +188,11 @@ if(isset($_POST['docsub1']))
                 <div class="col-sm-4" style="left: -3%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x" style="color:#03C9D7"></i> <i class="fa fa-users fa-stack-1x fa-inverse"></i> </span>
                       <h4 class="StepTitle" style="margin-top: 5%;">Patient List</h4>
                       
                       <p class="cl-effect-1">
-                        <a href="#app-hist" onclick="clickDiv('#list-pat-list')">
+                        <a href="#app-hist" onclick="clickDiv('#list-pat-list')" style="color:#03C9D7">
                           View Patients
                         </a>
                       </p>
@@ -188,11 +204,11 @@ if(isset($_POST['docsub1']))
                 <div class="col-sm-4">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x" style="color:#03C9D7"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
                       <h4 class="StepTitle" style="margin-top: 5%;">Appointment Details</h4>
                     
                       <p class="cl-effect-1">
-                        <a href="#app-hist" onclick="clickDiv('#list-app-list')">
+                        <a href="#app-hist" onclick="clickDiv('#list-app-list')" style="color:#03C9D7">
                           View Appointments
                         </a>
                       </p>
@@ -205,11 +221,11 @@ if(isset($_POST['docsub1']))
                 <div class="col-sm-4" style="left: 13%;margin-top: 5%;">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x" style="color:#03C9D7"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
                       <h4 class="StepTitle" style="margin-top: 5%;">Prescription List</h4>
                     
                       <p class="cl-effect-1">
-                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
+                        <a href="#list-pres" onclick="clickDiv('#list-pres-list')" style="color:#03C9D7">
                           View Prescriptions
                         </a>
                       </p>
@@ -221,13 +237,13 @@ if(isset($_POST['docsub1']))
                 <div class="col-sm-4" style="left: 18%;margin-top: 5%">
                   <div class="panel panel-white no-radius text-center">
                     <div class="panel-body" >
-                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-plus fa-stack-1x fa-inverse"></i> </span>
+                      <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x" style="color:#03C9D7"></i> <i class="fa fa-plus fa-stack-1x fa-inverse"></i> </span>
                       <h4 class="StepTitle" style="margin-top: 5%;">Manage Doctors</h4>
                     
                       <p class="cl-effect-1">
-                        <a href="#app-hist" onclick="clickDiv('#list-adoc-list')">Add Doctors</a>
+                        <a href="#app-hist" onclick="clickDiv('#list-adoc-list')" style="color:#03C9D7">Add Doctors</a>
                         &nbsp|
-                        <a href="#app-hist" onclick="clickDiv('#list-ddoc-list')">
+                        <a href="#app-hist" onclick="clickDiv('#list-ddoc-list')" style="color:#03C9D7">
                           Delete Doctors
                         </a>
                       </p>

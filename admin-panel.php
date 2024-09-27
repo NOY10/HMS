@@ -153,66 +153,71 @@ function get_specs(){
 ?>
 <html lang="en">
   <head>
-
-
-    <!-- Required meta tags -->
     <meta charset="utf-8">
+    <title>MenjongCareUnit</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
-    
-        <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
-
-    
-  
-    
-    
-
-
-
+    <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Global Hospital </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <style >
+
+    <style >
     .bg-primary {
-    background: -webkit-linear-gradient(left, #3931af, #00c6ff);
-}
-.list-group-item.active {
-    z-index: 2;
-    color: #fff;
-    background-color: #342ac1;
-    border-color: #007bff;
-}
-.text-primary {
-    color: #342ac1!important;
-}
+      background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+    }
+   .list-group-item.active {
+     z-index: 2;
+     color: #fff;
+     background-color: #03C9D7;
+     border-color: #03C9D7;
+    }
+    .text-primary {
+     color: #342ac1!important;
+    }
 
-.btn-primary{
-  background-color: #3c50c1;
-  border-color: #3c50c1;
-}
+   .btn-primary{
+    background-color: #3c50c1;
+    border-color: #3c50c1;
+   }
   </style>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-     <ul class="navbar-nav mr-auto">
-       <li class="nav-item">
-        <a class="nav-link" href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#"></a>
-      </li>
-    </ul>
-  </div>
+      
+      <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      id="mainNav"
+      style="
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <img
+            draggable="false"
+            class="logo-img"
+            src="img/logo.png"
+            alt="Logo Image"
+            style="width: 150px; height: 50px"
+          />
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" style="margin-left:auto">
+         <a class="nav-link" href="logout.php" style="color:black">
+          <i class="fa fa-sign-out" aria-hidden="true" style="color:black"></i>
+           Logout
+         </a>
+        </li>
+        <li class="nav-item">
+         <a class="nav-link" href="#"></a>
+        </li>
+     </ul>
+   </div>
 </nav>
   </head>
   <style type="text/css">
@@ -227,7 +232,7 @@ function get_specs(){
     <div class="row">
   <div class="col-md-4" style="max-width:25%; margin-top: 3%">
     <div class="list-group" id="list-tab" role="tablist">
-      <a class="list-group-item list-group-item-action active" id="list-dash-list" data-toggle="list" href="#list-dash" role="tab" aria-controls="home">Dashboard</a>
+      <a class="list-group-item list-group-item-action active" id="list-dash-list" data-toggle="list" href="#list-dash" role="tab" aria-controls="home" >Dashboard</a>
       <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Book Appointment</a>
       <a class="list-group-item list-group-item-action" href="#app-hist" id="list-pat-list" role="tab" data-toggle="list" aria-controls="home">Appointment History</a>
       <a class="list-group-item list-group-item-action" href="#list-pres" id="list-pres-list" role="tab" data-toggle="list" aria-controls="home">Prescriptions</a>
@@ -239,10 +244,10 @@ function get_specs(){
 
 
       <div class="tab-pane fade  show active" id="list-dash" role="tabpanel" aria-labelledby="list-dash-list">
-        <div class="" style="display:flex; width:100%; margin-top:4%">
-          <div class="col-sm-4" style="left: 5%">
+      <div class="" style="display: flex; align-items: center; width: 100%; margin-top: 4%; justify-content: center;">
+          <div class="col-sm-4" >
             <div class="panel panel-white no-radius text-center">
-                <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
+                <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x" style="color:#03C9D7"></i> <i class="fa fa-terminal fa-stack-1x fa-inverse"></i> </span>
                 <h4 class="StepTitle" style="margin-top: 5%;"> Book My Appointment</h4>
                 <script>
                   function clickDiv(id) {
@@ -250,7 +255,7 @@ function get_specs(){
                   }
                 </script>                      
                 <p class="links cl-effect-1">
-                  <a href="#list-home" onclick="clickDiv('#list-home-list')">
+                  <a href="#list-home" onclick="clickDiv('#list-home-list')" style="color:#03C9D7">
                     Book Appointment
                   </a>
                 </p>
@@ -258,14 +263,14 @@ function get_specs(){
             </div>
           </div>
 
-          <div class="col-sm-4" style="left: 10%">
+          <div class="col-sm-4" >
             <div class="panel panel-white no-radius text-center">
               <div class="panel-body" >
-                <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
+                <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x " style="color:#03C9D7"></i> <i class="fa fa-paperclip fa-stack-1x fa-inverse"></i> </span>
                 <h4 class="StepTitle" style="margin-top: 5%;">My Appointments</h2>
               
                 <p class="cl-effect-1">
-                  <a href="#app-hist" onclick="clickDiv('#list-pat-list')">
+                  <a href="#app-hist" onclick="clickDiv('#list-pat-list')" style="color:#03C9D7">
                     View Appointment History
                   </a>
                 </p>
@@ -273,15 +278,14 @@ function get_specs(){
             </div>
           </div>
        
-
-          <div class="col-sm-4" style="left: 20%;">
+          <div class="col-sm-4">
             <div class="panel panel-white no-radius text-center">
               <div class="panel-body" >
-                <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x text-primary"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
+                <span class="fa-stack fa-2x"> <i class="fa fa-square fa-stack-2x" style="color:#03C9D7"></i> <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i> </span>
                 <h4 class="StepTitle" style="margin-top: 5%;">Prescriptions</h2>
               
                 <p class="cl-effect-1">
-                  <a href="#list-pres" onclick="clickDiv('#list-pres-list')">
+                  <a href="#list-pres" onclick="clickDiv('#list-pres-list')" style="color:#03C9D7">
                     View Prescription List
                   </a>
                 </p>

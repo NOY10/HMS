@@ -4,9 +4,9 @@ include("header.php");
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MenjongCareUnit</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
@@ -42,7 +42,7 @@ include("header.php");
     >
     <div class="container">
       <a draggable="false" class="navbar-brand js-scroll-trigger" href="/HMS" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;">
-                        <img draggable="false" class="logo-img" src="img/logo.png" alt="Logo Image" width="100px" height="50px"/>
+      <img draggable="false" class="logo-img" src="img/logo.png" alt="Logo Image" style="width:150px; height:50px" width="100px" height="50px"/>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -68,7 +68,7 @@ include("header.php");
         </ul>
       </div>
     </div>
-</nav>
+  </nav>
 
 
 
