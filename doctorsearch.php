@@ -22,7 +22,7 @@ if(isset($_POST['doctor_search_submit']))
   else {
     echo "<div class='container-fluid' style='margin-top:50px;'>
 	<div class ='card'>
-	<div class='card-body' style='background-color:#342ac1;color:#ffffff;'>
+	<div class='card-body' style='background-color:#03C9D7;color:black;'>
 <table class='table table-hover'>
   <thead>
     <tr>

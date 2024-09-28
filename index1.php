@@ -78,13 +78,8 @@ include("header.php");
 
       
          <div class="col-md-7" style="padding-left: 180px; ">
-                 <div style="-webkit-animation: mover 2s infinite alternate;
-    animation: mover 1s infinite alternate;">
-          <img src="images/ambulance1.png" alt="" style="width: 20%;padding-left: 40px;margin-top: 150px;margin-left: 45px;margin-bottom:15px">
-      </div>
-
-      <div style="color: white;">
-            <h4 style="font-family: 'IBM Plex Sans', sans-serif;"> We are here for you!</h4>
+          <div class="col-md-3 register-left" style="margin-top: 20%;right: 15%">
+            <img src="img/hero.jpg" alt="Hero Image" style="width:500px; height:500px;" />
           </div>
 
          </div>
@@ -93,7 +88,6 @@ include("header.php");
           <div class="card" style="font-family: 'IBM Plex Sans', sans-serif;">
             <div class="card-body">
               <center>
-                <i class="fa fa-hospital-o fa-3x" aria-hidden="true" style="color:#0062cc"></i>
                 <br>
               <h3 style="margin-top: 10%">Patient Login</h3><br>
               <form class="form-group" method="POST" action="func.php">

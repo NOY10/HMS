@@ -126,10 +126,8 @@ if(isset($_GET["generate_bill"])){
 
   $content .= '
       <br/>
-      <h2 align ="center"> Global Hospitals</h2></br>
+      <h2 align ="center"> MenJongCareUnit</h2></br>
       <h3 align ="center"> Bill</h3>
-      
-
   ';
  
   $content .= generate_bill();
@@ -181,8 +179,8 @@ function get_specs(){
     }
 
    .btn-primary{
-    background-color: #3c50c1;
-    border-color: #3c50c1;
+    background-color: #03C9D7;
+    border-color: #03C9D7;
    }
   </style>
       
@@ -318,8 +316,8 @@ function get_specs(){
                           }
                           echo json_encode($docarray);
 
-                  ?> -->
-        
+                  ?> 
+         -->
 
                     <div class="col-md-4">
                           <label for="spec">Specialization:</label>

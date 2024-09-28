@@ -100,8 +100,7 @@ function checklen()
   <div class="container register" style="font-family: 'IBM Plex Sans', sans-serif;">
         <div class="row">
             <div class="col-md-3 register-left" style="margin-top: 0%;right: 15%">
-            <img src="img/hero.jpg" alt="Hero Image" style="width:500px; height:500px;" />
-
+              <img src="img/hero.jpg" alt="Hero Image" style="width:500px; height:500px;" />
             </div>
             <div class="col-md-9 " style="margin-top: 10px;left: 100px;">
                 <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist" style="width: 40%; padding:5px; background:#03C9D7; margin-right:15px">
@@ -152,7 +151,7 @@ function checklen()
                                 </div>
                                 
                                 <div class="form-group">
-                                    <input type="tel" minlength="10" maxlength="10" name="contact" class="form-control" placeholder="Your Phone *"  />
+                                    <input type="tel" minlength="8" maxlength="8" name="contact" class="form-control" placeholder="Your Phone *"  />
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control"  id="cpassword" placeholder="Confirm Password *" name="cpassword"  onkeyup='check();' required/><span id='message'></span>

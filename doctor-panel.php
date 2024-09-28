@@ -119,7 +119,7 @@ if(isset($_GET['cancel']))
   </style>
   <body style="padding-top:50px;">
    <div class="container-fluid" style="margin-top:50px;">
-    <h3 style = "margin-left: 350px; padding-bottom: 20px;font-family:'IBM Plex Sans', sans-serif;"> Welcome &nbsp<?php echo $_SESSION['dname'] ?>,  </h3>
+    <h3 style = "margin-left: 350px; padding-bottom: 20px;font-family:'IBM Plex Sans', sans-serif;"> Welcome &nbsp Dr.<?php echo $_SESSION['dname'] ?>,  </h3>
     <div class="row">
   <div class="col-md-4" style="max-width:18%;margin-top: 3%;">
     <div class="list-group" id="list-tab" role="tablist">

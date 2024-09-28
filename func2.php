@@ -19,7 +19,11 @@ if(isset($_POST['patsub1'])){
         $_SESSION['gender'] = $_POST['gender'];
         $_SESSION['contact'] = $_POST['contact'];
         $_SESSION['email'] = $_POST['email'];
-        header("Location:admin-panel.php");
+        echo "<script>
+          alert('Registration successful!');
+          window.location.href='index1.php';
+        </script>";
+      
     } 
 
     $query1 = "select * from patreg;";
